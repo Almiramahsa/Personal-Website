@@ -7,9 +7,9 @@ function Works() {
   return (
     <div className="py-12">
       <SectionTitle id="works">Side Projects</SectionTitle>
-      <div className="grid grid-vols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+      <div className="grid grid-vols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 ">
         {works.map((work) => (
-          <WorkItem key={work.title} title={work.title} imgUrl={work.imgUrl} tech={work.tech} description={work.description} />
+          <WorkItem key={work.title} title={work.title} icon={work.icon} imgUrl={work.imgUrl} tech={work.tech} description={work.description} />
         ))}
       </div>
     </div>

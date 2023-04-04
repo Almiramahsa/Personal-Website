@@ -54,7 +54,7 @@ function HeroSection() {
   const handleTypingEnd = () => {
     console.log('Typing has finished');
   };
-  const text = 'A Frontend Engineer based in Indonesia. Feel free to explore my work below.  ';
+  const text = 'A  Frontend Engineer based in Indonesia. Feel free to explore my work below.  ';
   return (
     <div className="flex items-center justify-center flex-col py-20">
       <div className="text-center">
