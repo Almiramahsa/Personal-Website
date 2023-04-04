@@ -2,12 +2,12 @@ import React from 'react';
 
 function WorkItem({ title, tech, imgUrl, description }) {
   return (
-    <div className=" bg-gray-100 dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl mb-3 transition hover:-translate-y-2 transform ">
+    <div className="  dark:bg-slate-800 border rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl mb-3 transition hover:-translate-y-2 transform ">
       <div>
         <img src={imgUrl} alt={title} className="w-full h-50 md:h-50 object-cover rounded-lg" />
       </div>
 
-      <div className="px-10 text-gray-600">
+      <div className="px-10 mt-10 text-gray-600">
         <h3 className="text-2xl text-left  md:text-xl mb-5 md:mb-3 font-semibold text-black dark:text-white">{title}</h3>
       </div>
       <div className="px-10">
