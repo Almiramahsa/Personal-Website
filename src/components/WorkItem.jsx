@@ -1,16 +1,10 @@
 import React from 'react';
-import { AiFillGithub } from 'react-icons/Ai';
-import { BiLink } from 'react-icons/Bi';
+
 function WorkItem({ title, tech, imgUrl, description }) {
   return (
     <div className=" bg-gray-100 dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl mb-3 transition hover:-translate-y-2 transform ">
       <div>
         <img src={imgUrl} alt={title} className="w-full h-50 md:h-50 object-cover rounded-lg" />
-      </div>
-
-      <div className="mt-5 px-10">
-        <BiLink className="text-gray-500 hover:text-violet-500 dark:text-gray-200 w-6 h-6 mb-3 mr-3 inline-block" />
-        <AiFillGithub className="text-gray-500 hover:text-violet-500 dark:text-gray-200 w-6 h-6 mb-3 inline-block" />
       </div>
 
       <div className="px-10 text-gray-600">
