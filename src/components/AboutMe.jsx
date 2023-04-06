@@ -1,8 +1,16 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
 import { motion } from 'framer-motion';
-
+import { GrLinkBottom } from 'react-icons/gr';
 function AboutMe() {
+  const downloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/public/CV_ATS_Almira Mahsa.pdf';
+    link.download = 'CV Almira March 2023';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className="min-h-screen flex items-center justify-center flex-col py-20">
       <div className="text-center flex-grow">
@@ -15,8 +23,8 @@ function AboutMe() {
               <a href="/" className="text-violet-500 font-medium dark:text-violet-400" target="_blank" rel="noopener noreferrer">
                 Frontend Engineer&nbsp;
               </a>
-              with a master's degree in geomatics engineering, which gives me a unique combination of technical skills and expertise in spatial data and GIS technology. She's a&nbsp; passionate about programming and enjoy using my knowledge
-              to develop innovative solutions that solve complex problems.
+              with a master's degree in geomatics engineering, which gives her a unique combination of technical skills in Frontend development and expertise in spatial data and GIS technology. She is passionate about programming and enjoys
+              using her knowledge to develop innovative solutions that solve complex problems.
             </p>
             <ul className="flex">
               <li className="mr-6">
@@ -31,7 +39,7 @@ function AboutMe() {
                 </a>
               </li>
               <li className="mr-6">
-                <a href="https://mastodon.social/@dizzyup" rel="me" target="_blank">
+                <a href="https://www.linkedin.com/in/almira-mahsa/" rel="me" target="_blank">
                   <svg width="28" height="28" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-cyan-900 hover:text-blue-500">
                     <path
                       d="M8 0C3.58167 0 0 3.58167 0 8C0 12.4183 3.58167 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58167 12.4183 0 8 0ZM6.04167 11.3158H4.42167V6.1025H6.04167V11.3158ZM5.22167 5.4625C4.71 5.4625 4.37917 5.1 4.37917 4.65167C4.37917 4.19417 4.72 3.8425 5.2425 3.8425C5.765 3.8425 6.085 4.19417 6.095 4.65167C6.095 5.1 5.765 5.4625 5.22167 5.4625ZM11.9583 11.3158H10.3383V8.42667C10.3383 7.75417 10.1033 7.2975 9.5175 7.2975C9.07 7.2975 8.80417 7.60667 8.68667 7.90417C8.64333 8.01 8.6325 8.16 8.6325 8.30917V11.315H7.01167V7.765C7.01167 7.11417 6.99083 6.57 6.96917 6.10167H8.37667L8.45083 6.82583H8.48333C8.69667 6.48583 9.21917 5.98417 10.0933 5.98417C11.1592 5.98417 11.9583 6.69833 11.9583 8.23333V11.3158Z"
@@ -41,7 +49,7 @@ function AboutMe() {
                 </a>
               </li>
               <li className=" mr-6">
-                <a href="https://mastodon.social/@dizzyup" rel="me" target="_blank">
+                <a href="mailto:almiramahsa9@gmail.com" rel="me" target="_blank">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M21 12C21 10.1195 20.411 8.28625 19.3156 6.7577C18.2203 5.22915 16.6736 4.08209 14.893 3.47763C13.1123 2.87316 11.187 2.84166 9.38744 3.38754C7.58792 3.93341 6.00459 5.02925 4.85982 6.52115C3.71505 8.01304 3.06635 9.82604 3.00482 11.7055C2.94329 13.585 3.47203 15.4366 4.51677 17.0001C5.56152 18.5637 7.06979 19.7608 8.82975 20.4232C10.5897 21.0856 12.513 21.18 14.3294 20.6933"
@@ -55,7 +63,7 @@ function AboutMe() {
                 </a>
               </li>
               <li className="mr-6">
-                <a href="https://mastodon.social/@dizzyup" rel="me" target="_blank">
+                <a href="https://www.instagram.com/almiramahsaa/" rel="me" target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
                     <path
                       fill="#C668CF"
@@ -65,7 +73,7 @@ function AboutMe() {
                 </a>
               </li>
               <li className="mr-6 ">
-                <a href="https://mastodon.social/@dizzyup" rel="me" target="_blank">
+                <a href="https://github.com/Almiramahsa" rel="me" target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
                     <path
                       fill="currentColor"
@@ -75,24 +83,12 @@ function AboutMe() {
                   </svg>
                 </a>
               </li>
-              {/* <li className="mr-6 ">
-                <a href="https://mastodon.social/@dizzyup" rel="me" target="_blank">
-                  <svg width="26" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M42.5 56.25H17.5C15.1794 56.25 12.9538 55.3282 11.3128 53.6872C9.67187 52.0463 8.75 49.8207 8.75 47.5V26.775C8.75574 25.4134 9.0721 24.071 9.675 22.85L16.8 8.57502C17.526 7.12217 18.643 5.90079 20.0255 5.04836C21.4079 4.19592 23.0009 3.74627 24.625 3.75002H42.5C44.8206 3.75002 47.0462 4.6719 48.6872 6.31284C50.3281 7.95378 51.25 10.1794 51.25 12.5V47.5C51.25 49.8207 50.3281 52.0463 48.6872 53.6872C47.0462 55.3282 44.8206 56.25 42.5 56.25ZM24.625 6.25002C23.4662 6.24662 22.3296 6.56805 21.3442 7.17785C20.3588 7.78765 19.564 8.66142 19.05 9.70002L11.9 23.975C11.4738 24.847 11.2516 25.8045 11.25 26.775V47.5C11.25 49.1576 11.9085 50.7473 13.0806 51.9194C14.2527 53.0915 15.8424 53.75 17.5 53.75H42.5C44.1576 53.75 45.7473 53.0915 46.9194 51.9194C48.0915 50.7473 48.75 49.1576 48.75 47.5V12.5C48.75 10.8424 48.0915 9.25271 46.9194 8.08061C45.7473 6.9085 44.1576 6.25002 42.5 6.25002H24.625Z"
-                      fill="#FF00D6"
-                    />
-                    <path
-                      d="M28.675 20.222C28.6814 19.8925 28.8152 19.5783 29.0482 19.3452C29.2813 19.1122 29.5955 18.9784 29.925 18.972C30.2566 18.972 30.5745 19.1037 30.8089 19.3382C31.0434 19.5726 31.175 19.8905 31.175 20.222L31.175 40.872C31.1751 41.1993 31.0469 41.5135 30.8178 41.7472C30.5888 41.9809 30.2772 42.1155 29.95 42.122C29.6162 42.1221 29.2956 41.9912 29.0572 41.7575C28.8188 41.5238 28.6816 41.2058 28.675 40.872L28.675 20.247L28.675 20.222Z"
-                      fill="#FF00D6"
-                    />
-                    <path
-                      d="M19 34.0477C19.0017 33.7148 19.1264 33.3943 19.35 33.1477C19.5879 32.917 19.9062 32.7881 20.2375 32.7881C20.5688 32.7881 20.8871 32.917 21.125 33.1477L30 41.9727L38.8 33.0727C39.0379 32.842 39.3562 32.7131 39.6875 32.7131C40.0188 32.7131 40.3371 32.842 40.575 33.0727C40.6922 33.1889 40.7852 33.3271 40.8486 33.4794C40.9121 33.6318 40.9448 33.7952 40.9448 33.9602C40.9448 34.1252 40.9121 34.2886 40.8486 34.4409C40.7852 34.5932 40.6922 34.7315 40.575 34.8477L30.875 44.5977C30.6427 44.8309 30.3292 44.9653 30 44.9727C29.8361 44.9747 29.6735 44.9423 29.5228 44.8777C29.3721 44.8132 29.2366 44.7178 29.125 44.5977L19.35 34.8977C19.1375 34.664 19.0137 34.3632 19 34.0477V34.0477Z"
-                      fill="#FF00D6"
-                    />
-                  </svg>
-                </a>
-              </li> */}
+              <li className="mr-6 ">
+                <button className=" text-black hover:bg-gray-50 border p-2 font-normal py-2 text-sm rounded" onClick={downloadCV}>
+                  <span>CV</span>
+                  <GrLinkBottom className="ml-2 inline-block" />
+                </button>
+              </li>
             </ul>
           </motion.div>
         </motion.div>

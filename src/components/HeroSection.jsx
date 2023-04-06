@@ -68,7 +68,7 @@ function HeroSection() {
         </motion.div>
 
         <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.5, duration: 1 }} className="flex items-center justify-center flex-col ">
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2, duration: 1 }} className="text-center text-xl md:text-2xl text-black dark:text-gray-200 ">
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2, duration: 1 }} className="text-center text-md md:text-xl text-black dark:text-gray-200 ">
             <p>A Frontend Engineer based in Indonesia.</p>
             <p>Feel free to explore my work below.</p>
           </motion.div>
