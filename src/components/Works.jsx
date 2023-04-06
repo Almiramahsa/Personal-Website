@@ -13,7 +13,7 @@ function Works() {
       </p>
       <div className="grid grid-vols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 mt-10">
         {works.map((work) => (
-          <WorkItem key={work.title} title={work.title} icon={work.icon} imgUrl={work.imgUrl} tech={work.tech} description={work.description} />
+          <WorkItem key={work.title} title={work.title} year={work.year} link={work.link} icon={work.img} imgUrl={work.imgUrl} tech={work.tech} description={work.description} />
         ))}
       </div>
     </div>

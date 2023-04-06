@@ -7,3 +7,13 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+.box {
+  box-sizing: border-box;
+  position: absolute;
+  width: 441px;
+  height: 262px;
+
+  border: 1px solid #bebbbb;
+  border-radius: 23px;
+}
