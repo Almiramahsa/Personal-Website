@@ -12,7 +12,7 @@ function AboutMe() {
   //   document.body.removeChild(link);
   // };
   return (
-    <div className="min-h-screen flex items-center justify-center flex-col py-20">
+    <section id="about" className="min-h-screen flex items-center justify-center flex-col py-20">
       <div className="text-center flex-grow">
         <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.5, duration: 1 }} className="flex items-center justify-center flex-col ">
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2, duration: 1 }} className="text-center text-lg md:text-xl text-black dark:text-gray-200 ">
@@ -93,7 +93,7 @@ function AboutMe() {
           </motion.div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
 

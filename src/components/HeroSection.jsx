@@ -31,7 +31,7 @@ function TypingText({}) {
 
 function HeroSection() {
   return (
-    <div className="min-h-screen flex items-center justify-center flex-col py-20">
+    <section id="home" className="min-h-screen flex items-center justify-center flex-col py-20">
       <Navbar />
       <div className="text-center flex-grow">
         <h1 className="text-md md:text-xl mb-1 md:mb-3 font-normal mt-20 text-violet-500 dark:text-gray-200 dark:opacity-70">Hi everyone 👋, this is</h1>
@@ -76,7 +76,7 @@ function HeroSection() {
           </motion.div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
 

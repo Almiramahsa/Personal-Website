@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import Navbar from './Navbar';
 
 function ServiceItem({ title, icon, description }) {
   const [showMore, setShowMore] = useState(false);
@@ -9,7 +8,7 @@ function ServiceItem({ title, icon, description }) {
   const fullDescription = description.split(' ').slice(0, 40).join(' ');
 
   return (
-    <div className=" flex flex-col justify-center items-center mt-10">
+    <section id="role" className=" flex flex-col justify-center items-center mt-10">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -26,7 +25,7 @@ function ServiceItem({ title, icon, description }) {
           </button> */}
         </p>
       </motion.div>
-    </div>
+    </section>
   );
 }
 
