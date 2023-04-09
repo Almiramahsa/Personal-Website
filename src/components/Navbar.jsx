@@ -17,7 +17,7 @@ function Navbar() {
   return (
     <div className="navbar-container max-w-xl mx-auto  justify-end mt-4 p-4">
       <div>
-        <img src="/public/AM_plain_w.png" className="md:w-16 md:h-16 w-12 h-12  top-0 left-0 p-2 fixed" alt="Logo"></img>
+        <img src="/src/assets/am_plain_w.png" className="md:w-16 md:h-16 w-12 h-12  top-0 left-0 p-2 fixed" alt="Logo"></img>
       </div>
       <div className="sm:hidden absolute top-4 right-12 md:right-0">
         <button className="block text-zinc-800 hover:text-violet-500 focus:text-violet-500 transition duration-150 ease-in-out" onClick={toggleMenu}>
