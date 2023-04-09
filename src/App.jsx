@@ -3,6 +3,7 @@ import HeroSection from './components/HeroSection';
 import Services from './components/Services';
 import Works from './components/Works';
 import AboutMe from './components/AboutMe';
+import Footer from './components/Footer';
 function App() {
   const [theme, setTheme] = useState(null);
 
@@ -35,6 +36,7 @@ function App() {
           <AboutMe></AboutMe>
           <Services></Services>
           <Works></Works>
+          <Footer />
         </div>
       </div>
     </>

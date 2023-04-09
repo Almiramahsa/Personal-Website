@@ -3,14 +3,14 @@ import SectionTitle from './SectionTitle';
 import { motion } from 'framer-motion';
 import { GrLinkBottom } from 'react-icons/gr';
 function AboutMe() {
-  const downloadCV = () => {
-    const link = document.createElement('a');
-    link.href = '/public/CV_ATS_Almira Mahsa.pdf';
-    link.download = 'CV Almira March 2023';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const downloadCV = () => {
+  //   const link = document.createElement('a');
+  //   link.href = '/public/CV_ATS_Almira Mahsa.pdf';
+  //   link.download = 'CV Almira March 2023';
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
   return (
     <div className="min-h-screen flex items-center justify-center flex-col py-20">
       <div className="text-center flex-grow">
@@ -83,12 +83,12 @@ function AboutMe() {
                   </svg>
                 </a>
               </li>
-              <li className="mr-6 ">
+              {/* <li className="mr-6 ">
                 <button className=" text-black hover:bg-gray-50 border p-2 font-normal py-2 text-sm rounded" onClick={downloadCV}>
                   <span>CV</span>
                   <GrLinkBottom className="ml-2 inline-block" />
                 </button>
-              </li>
+              </li> */}
             </ul>
           </motion.div>
         </motion.div>
