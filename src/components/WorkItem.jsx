@@ -11,18 +11,18 @@ function WorkItem({ title, tech, year, img, link, description }) {
       </div>
 
       <div className="px-4 md:px-10 mt-5 ">
-        <h3 className="text-2xl text-left  md:text-xl mb-5 md:mb-3 font-semibold text-black dark:text-white">{title}</h3>
+        <h3 className="text-2xl text-left  md:text-xl mb-5 md:mb-3 font-semibold font-serif text-black dark:text-white">{title}</h3>
       </div>
       <div className="px-4 md:px-10">
         {tech.map((techItem, index) => (
-          <span key={index} className="inline-block  px-1 py-1 text-sm font-base text-gray-700 mr-2 mb-2">
+          <span key={index} className="inline-block  text-sm mr-3 text-violet-400  mb-2">
             • {techItem}
           </span>
         ))}
       </div>
 
       <div className="px-4 md:px-10 ">
-        <p className="text-gray-500 dark:text-gray-200 text-sm">
+        <p className="text-gray-500 dark:text-gray-200  text-sm">
           {title} {description}
         </p>
       </div>

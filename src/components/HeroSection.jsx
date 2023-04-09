@@ -32,13 +32,13 @@ function HeroSection() {
   return (
     <div className="min-h-screen flex items-center justify-center flex-col py-20">
       <div className="text-center flex-grow">
-        <h1 className="text-md md:text-xl mb-1 md:mb-3 font-normal mt-20 text-black dark:text-gray-200 dark:opacity-70">Hi everyone, this is</h1>
+        <h1 className="text-md md:text-xl mb-1 md:mb-3 font-normal mt-20 text-black dark:text-gray-200 dark:opacity-70">Hi everyone 👋, this is</h1>
         <div className="w-full h-full relative overflow-hidden text-black dark:text-gray-200 left-0 mt-5">
           <motion.div
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="font-interTight font-bold text-7xl md:text-9xl leading-12 text-center whitespace-normal"
+            className="font-interTight font-bold font-serif text-7xl md:text-9xl leading-12 text-center whitespace-normal"
             style={{ letterSpacing: '-1px' }}
           >
             <span className="perspective-y-0 inline-block">
@@ -55,7 +55,7 @@ function HeroSection() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8 }}
-          className="font-interTight font-bold text-7xl md:text-9xl mb-5 leading-12 text-center whitespace-normal dark:text-gray-200"
+          className="font-interTight font-bold font-serif text-7xl md:text-9xl mb-5 leading-12 text-center whitespace-normal dark:text-gray-200"
           style={{ letterSpacing: '-1px' }}
         >
           <span className="perspective-y-0 inline-block">
