@@ -9,13 +9,12 @@ export default [
   },
   {
     title: 'UI Design',
-    description: "I have a good understanding of user-centered design principles, and am proficient in tools such as Figma. If you're looking for a skilled UI designer to enhance the user experience of your digital product, let's chat!",
+    description: "I have a good understanding of user-centered design principles, and am proficient in tools such as Figma. If you're looking for a skilled UI designer to enhance the user experience of your digital product.",
     icon: <VscSymbolColor className=" w-full h-full" />,
   },
   {
     title: 'Web Development',
-    description:
-      " I'll use my expertise in HTML, CSS, JavaScript, and other web technologies to create websites that are fast, reliable, and accessible.  If you're looking for a reliable web developer to bring your website to life, I am here to help!",
+    description: " I'll use my expertise in HTML, CSS, JavaScript, and other web technologies to create websites that are fast, reliable, and accessible.  If you're looking for a reliable web developer to bring your website to life.",
     icon: <VscCode className=" w-full h-full" />,
   },
 ];

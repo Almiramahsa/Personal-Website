@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Navbar from './Navbar';
 function WorkItem({ title, tech, year, img, link, description }) {
   return (
     <div className="dark:bg-slate-800 border rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl mb-3 transition hover:bg-gray-50 hover:bg-opacity-75">

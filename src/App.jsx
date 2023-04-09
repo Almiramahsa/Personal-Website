@@ -1,9 +1,12 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import HeroSection from './components/HeroSection';
 import Services from './components/Services';
 import Works from './components/Works';
 import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+
 function App() {
   const [theme, setTheme] = useState(null);
 
@@ -32,11 +35,15 @@ function App() {
       </button>
       <div className="bg-white dark:bg-slate-900">
         <div className="max-w-5xl mx-auto w-11/12">
-          <HeroSection />
-          <AboutMe></AboutMe>
-          <Services></Services>
-          <Works></Works>
-          <Footer />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/home" element={<HeroSection />} />
+              <Route path="/about" element={<AboutMe />} />
+              <Route path="/role" element={<Services />} />
+              <Route path="/projects" element={<Works />} />
+            </Routes>
+            <Footer />
+          </BrowserRouter>
         </div>
       </div>
     </>
