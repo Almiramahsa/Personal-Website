@@ -42,7 +42,7 @@ function MapInit() {
     }
   }, []);
   return (
-    <MapContainer center={[-2.989167, 120.164167]} zoom={6} minZoom={4} id="mapid" style={{ height: '700px' }}>
+    <MapContainer center={[-2.989167, 120.164167]} zoom={6} minZoom={4} id="mapid" style={{ height: '700px' }} dragging={false}>
       <ResizeMapListener />
       <TileLayer
         url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
