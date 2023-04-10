@@ -34,8 +34,15 @@ function ResizeMapListener() {
 }
 
 function MapInit() {
+  const mapRef = useRef(null);
+
+  useEffect(() => {
+    if (mapRef.current) {
+      mapRef.current.leafletElement.scrollWheelZoom.disable(); // menonaktifkan zoom-in/out saat scroll
+    }
+  }, []);
   return (
-    <MapContainer center={[-0.8917, 119.8707]} zoom={7} minZoom={4} id="mapid" style={{ height: '500px' }}>
+    <MapContainer center={[-2.989167, 120.164167]} zoom={6} minZoom={4} id="mapid" style={{ height: '700px' }}>
       <ResizeMapListener />
       <TileLayer
         url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
