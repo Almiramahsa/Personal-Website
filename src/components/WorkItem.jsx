@@ -1,7 +1,7 @@
 import React from 'react';
 function WorkItem({ title, tech, year, img, link, description }) {
   return (
-    <section id="projects" className="dark:bg-slate-800 border rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl mb-3 transition hover:bg-gray-50 hover:bg-opacity-75">
+    <section id="projects" className="dark:bg-slate-800 border rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl mb-3 transition hover:bg-gray-50 hover:bg-opacity-75 ">
       <div className="flex justify-end">
         <p className="text-gray-400 inline-block hover:text-violet-500">{year}</p>
         <a href={link}>

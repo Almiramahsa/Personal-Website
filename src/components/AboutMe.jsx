@@ -28,7 +28,7 @@ function AboutMe() {
             </p>
             <ul className="flex">
               <li className="mr-6">
-                <a href="https://mastodon.social/@dizzyup" rel="me" target="_blank">
+                <a href="https://twitter.com/almiramhs" rel="me" target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="-1 -1 28 28" className="text-blue-500 hover:text-violet-500">
                     <path
                       fill="currentColor"

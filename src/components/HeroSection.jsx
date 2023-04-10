@@ -1,41 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';
-
-function TypingText({}) {
-  const [showCursor, setShowCursor] = useState(true);
-  const textRef = useRef(null);
-
-  return (
-    <h1 className="w-full h-full relative overflow-visible font-inter font-normal text-md md:text-xl tracking-tight text-left whitespace-normal text-gray-400 mb-0 mt-5">
-      <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="block text-2xl">
-        {typedText}
-      </motion.span>
-      {showCursor && (
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            delay: 0.5,
-            repeat: Infinity,
-            repeatType: 'reverse',
-            ease: 'linear',
-          }}
-          className="block h-full w-1 bg-gray-400 absolute top-0 right-0"
-          style={{ animationDelay: '1s' }}
-        />
-      )}
-    </h1>
-  );
-}
+import MapInit from './MapInit';
 
 function HeroSection() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center flex-col py-20">
+    <section id="home" className="min-h-screen flex flex-col">
+      <div className="w-full h-full absolute top-0 left-0 z-0 opacity-80">
+        <MapInit />
+      </div>
       <Navbar />
       <div className="text-center flex-grow">
-        <h1 className="text-md md:text-xl mb-1 md:mb-3 font-normal mt-20 text-violet-500 dark:text-gray-200 dark:opacity-70">Hi everyone 👋, this is</h1>
-        <div className="w-full h-full relative overflow-hidden text-black dark:text-gray-200 left-0 mt-5">
+        <h1 className="text-md md:text-xl mb-1 md:mb-3 font-normal mt-20 text-violet-500 dark:text-gray-200 dark:opacity-50">Hi everyone 👋, this is</h1>
+        <div className="w-full h-full relative overflow-hidden text-black dark:text-gray-200 left-0 mt-5 ">
           <motion.div
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
