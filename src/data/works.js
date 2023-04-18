@@ -4,6 +4,14 @@ export default [
   {
     year: '2023',
     img: '/public/cari.png',
+    link: 'https://github.com/Almiramahsa/personal-blog',
+    title: 'Personal Blog',
+    description: "Almira Mahsa's personal blog.",
+    tech: ['Nextjs', 'Tailwind', 'Graphql', 'Hygraph'],
+  },
+  {
+    year: '2023',
+    img: '/public/cari.png',
     link: 'https://github.com/Almiramahsa/caribencana',
     title: 'Knowledge by CARI!',
     description: 'is an Automatic, Spatial, and Web-based Disaster Knowledge Search Engine (Main Portal).',
@@ -32,7 +40,7 @@ export default [
   },
   {
     year: 2022,
-    link: '',
+    link: 'https://github.com/StayApp-Project/Frontend',
     title: 'Stay',
     description: ' is an online accommodation booking portal for travelers, and it also serves as a platform for property owners to list and offer their properties.',
     tech: ['React', 'Vite', 'Redux', 'Chakra UI', 'Tailwind CSS'],
