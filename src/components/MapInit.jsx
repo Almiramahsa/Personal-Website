@@ -38,15 +38,16 @@ function MapInit() {
 
   useEffect(() => {
     if (mapRef.current) {
-      mapRef.current.leafletElement.scrollWheelZoom.disable(); // menonaktifkan zoom-in/out saat scroll
+      mapRef.current.leafletElement.scrollWheelZoom.disable(); 
     }
   }, []);
   return (
     <MapContainer center={[-2.989167, 120.164167]} zoom={6} minZoom={4} id="mapid" style={{ height: '700px' }} dragging={false}>
       <ResizeMapListener />
       <TileLayer
-        url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
-        attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+        url="https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="#">© OpenStreetMap, © CartoDB</a> contributors'
+        
       />
       <PulseMarker />
     </MapContainer>

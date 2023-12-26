@@ -1,11 +1,12 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
 function WorkItem({ title, tech, year, img, link, description }) {
   return (
     <section id="projects" className="dark:bg-slate-800 border rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl mb-3 transition hover:bg-gray-50 hover:bg-opacity-75 ">
       <div className="flex justify-end">
-        <p className="text-gray-400 inline-block hover:text-violet-500">{year}</p>
+        <p className="text-gray-400 inline-block hover:text-violet-500 hover: cursor-pointer" >{year}</p>
         <a href={link}>
-          <img src="/github-mono.svg " className="inline-block ml-10 hover:text-violet-500"></img>
+          <Icon icon="line-md:github-loop"   width="28" height="28" className="inline-block ml-10 hover:text-violet-500" /> 
         </a>
       </div>
 

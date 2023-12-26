@@ -4,11 +4,20 @@ export default [
   {
     year: '2023',
     img: '/public/cari.png',
-    link: 'https://github.com/Almiramahsa/personal-blog',
-    title: 'Personal Blog',
-    description: "Almira Mahsa's personal blog.",
-    tech: ['Nextjs', 'Tailwind', 'Graphql', 'Hygraph'],
+    link: 'https://github.com/Almiramahsa/geocourse-webgis-project',
+    title: 'Bikini Bottom WebGIS',
+    description: "The Bikini Bottom WebGIS project, a space where the government and civilians can come together",
+    tech: ['HTML', 'CSS','Javascript', 'Bootstrap', 'Leaflet','Django', 'Python', 'Postgres'],
   },
+  {
+    year: '2023',
+    img: '/public/cari.png',
+    link: 'https://github.com/Almiramahsa/tasty-guru-app',
+    title: 'Tasty Guru',
+    description: "Master new recipes today with our website, transforming you into a kitchen pro with expert tips and easy-to-follow recipes.",
+    tech: ['Vuejs', 'Tailwind', 'Vuex','Vite'],
+  },
+
   {
     year: '2023',
     img: '/public/cari.png',

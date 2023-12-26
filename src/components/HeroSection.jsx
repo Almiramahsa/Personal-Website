@@ -11,7 +11,7 @@ function HeroSection() {
       </div>
       <Navbar />
       <div className="text-center flex-grow">
-        <h1 className="text-md md:text-xl mb-1 md:mb-3 font-normal mt-20 text-gray-900 dark:text-gray-200 dark:opacity-50">Hi everyone 👋, this is</h1>
+        <h1 className="text-md md:text-xl mb-1 md:mb-3 font-normal mt-20 text-gray-900 dark:text-gray-50 dark:opacity-70">Hi everyone 👋, this is</h1>
         <div className="w-full h-full relative overflow-hidden text-black dark:text-gray-200 left-0 mt-5 ">
           <motion.div
             initial={{ opacity: 0, y: -50 }}
